@@ -1,0 +1,67 @@
+<circuit version="1.0.0-SR0" rev="1320" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Nano-7" mainComp="false" Show_id="false" Show_Val="false" Pos="568,468" rotation="-270" hflip="1" vflip="1" label="Nano" idLabPos="16,26" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps itemtype="MCU" CircId="7_m328 TQFP-269" mainComp="true" Show_id="false" Show_Val="false" Pos="20,20" rotation="0" hflip="1" vflip="1" label="7_m328 TQFP-269" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../Arduino/RaceClock/RaceClock.ino.eightanaloginputs.hex" Auto_Load="false" Rst_enabled="true" Ext_Osc="true" Wdt_enabled="false" />
+</item>
+
+<item itemtype="Subcircuit" CircId="74HC595-10" mainComp="false" Show_id="true" Show_Val="false" Pos="716,556" rotation="-90" hflip="1" vflip="1" label="74HC595" idLabPos="-4,74" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false" />
+
+<item itemtype="Seven Segment" CircId="Seven Segment-11" mainComp="false" Show_id="false" Show_Val="false" Pos="848,612" rotation="0" hflip="1" vflip="1" label="Seven Segment-11" idLabPos="20,-44" labelrot="0" valLabPos="-16,20" valLabRot="0" NumDisplays="1 _7seg" Color="Red" Vertical_Pins="false" CommonCathode="false" Threshold="2.4 V" MaxCurrent="0.02 A" Resistance="1 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-59" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="796,636" rotation="0" hflip="1" vflip="1" label="Resistor-59" idLabPos="-16,-24" labelrot="0" valLabPos="-9,5" valLabRot="0" Resistance="220 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-60" mainComp="false" Show_id="false" Show_Val="false" Pos="796,628" rotation="0" hflip="1" vflip="1" label="Resistor-60" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="220 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-62" mainComp="false" Show_id="false" Show_Val="false" Pos="796,620" rotation="0" hflip="1" vflip="1" label="Resistor-62" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="220 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-63" mainComp="false" Show_id="false" Show_Val="false" Pos="796,612" rotation="0" hflip="1" vflip="1" label="Resistor-63" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="220 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-64" mainComp="false" Show_id="false" Show_Val="false" Pos="796,604" rotation="0" hflip="1" vflip="1" label="Resistor-64" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="220 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-65" mainComp="false" Show_id="false" Show_Val="false" Pos="796,596" rotation="0" hflip="1" vflip="1" label="Resistor-65" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="220 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-66" mainComp="false" Show_id="false" Show_Val="false" Pos="796,588" rotation="0" hflip="1" vflip="1" label="Resistor-66" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="220 Ω" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-169" mainComp="false" Show_id="false" Show_Val="false" Pos="744,660" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-169" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Connector" uid="connector-134" startpinid="74HC595-10-SHC" endpinid="Nano-7-2" pointList="764,516,764,484,628,484,628,520" />
+
+<item itemtype="Connector" uid="connector-135" startpinid="74HC595-10-STC" endpinid="Nano-7-3" pointList="756,516,756,476,620,476,620,520" />
+
+<item itemtype="Connector" uid="connector-136" startpinid="Seven Segment-11-pin_f" endpinid="Resistor-60-rPin" pointList="824,628,812,628" />
+
+<item itemtype="Connector" uid="connector-137" startpinid="Resistor-62-rPin" endpinid="Seven Segment-11-pin_e" pointList="812,620,824,620" />
+
+<item itemtype="Connector" uid="connector-138" startpinid="Seven Segment-11-pin_d" endpinid="Resistor-63-rPin" pointList="824,612,812,612" />
+
+<item itemtype="Connector" uid="connector-139" startpinid="Resistor-64-rPin" endpinid="Seven Segment-11-pin_c" pointList="812,604,824,604" />
+
+<item itemtype="Connector" uid="connector-140" startpinid="Seven Segment-11-pin_b" endpinid="Resistor-65-rPin" pointList="824,596,812,596" />
+
+<item itemtype="Connector" uid="connector-141" startpinid="Resistor-66-rPin" endpinid="Seven Segment-11-pin_a" pointList="812,588,824,588" />
+
+<item itemtype="Connector" uid="connector-148" startpinid="Nano-7-4" endpinid="74HC595-10-DS" pointList="612,520,612,468,740,468,740,516" />
+
+<item itemtype="Connector" uid="connector-151" startpinid="Nano-7-5V0" endpinid="74HC595-10-!MR" pointList="636,568,636,580,684,580,684,492,772,492,772,516" />
+
+<item itemtype="Connector" uid="connector-152" startpinid="74HC595-10-!OE" endpinid="Nano-7-GND1" pointList="748,516,748,500,692,500,692,588,652,588,652,568" />
+
+<item itemtype="Connector" uid="connector-153" startpinid="Resistor-59-rPin" endpinid="Seven Segment-11-pin_g" pointList="812,636,824,636" />
+
+<item itemtype="Connector" uid="Connector-162" startpinid="74HC595-10-Q1" endpinid="Resistor-66-lPin" pointList="724,564,724,588,780,588" />
+
+<item itemtype="Connector" uid="Connector-163" startpinid="74HC595-10-Q2" endpinid="Resistor-65-lPin" pointList="732,564,732,596,780,596" />
+
+<item itemtype="Connector" uid="Connector-164" startpinid="74HC595-10-Q3" endpinid="Resistor-64-lPin" pointList="740,564,740,604,780,604" />
+
+<item itemtype="Connector" uid="Connector-165" startpinid="74HC595-10-Q4" endpinid="Resistor-63-lPin" pointList="748,564,748,612,780,612" />
+
+<item itemtype="Connector" uid="Connector-166" startpinid="74HC595-10-Q5" endpinid="Resistor-62-lPin" pointList="756,564,756,620,780,620" />
+
+<item itemtype="Connector" uid="Connector-167" startpinid="74HC595-10-Q6" endpinid="Resistor-60-lPin" pointList="764,564,764,628,780,628" />
+
+<item itemtype="Connector" uid="Connector-168" startpinid="74HC595-10-Q7" endpinid="Resistor-59-lPin" pointList="772,564,772,636,780,636" />
+
+<item itemtype="Connector" uid="Connector-170" startpinid="Seven Segment-11-pin_commona" endpinid="Fixed Voltage-169-outnod" pointList="856,644,856,660,760,660" />
+
+</circuit>
