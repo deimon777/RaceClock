@@ -17,7 +17,7 @@ void setup() {
 void   loop() {
   for (int i = 0; i < 10; i++) {
     digitalWrite(STCP_pin, LOW);
-    shiftOut(DS_pin,   SHCP_pin, LSBFIRST, dec_digits[i]);
+    shiftOut(DS_pin, SHCP_pin, LSBFIRST, dec_digits[i]);
     digitalWrite(STCP_pin, HIGH);
     delay(1000);
   }
